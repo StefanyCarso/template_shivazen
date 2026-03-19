@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <script>
+    fetch('../estrutura/head.html')
+      .then(response => response.text())
+      .then(data => {
+        document.head.innerHTML = data;
+      })
+      .catch(error => console.error('Erro ao carregar head:', error));
+  </script>
+</head>
+
+<body class="appointment-page">
+  <div id="header-placeholder"></div>
+  <main class="main">
+    <div class="page-title"></div>
+
+    <section id="appointmnet" class="appointmnet section">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <div class="booking-wrapper">
+              <div class="booking-header text-center" data-aos="fade-up" data-aos-delay="200">
+                <h2>Agende seu Horário</h2>
+                <p>Agende seu procedimento estético em poucos passos. Nossa equipe de especialistas está pronta para oferecer o melhor cuidado para realçar sua beleza natural.</p>
+              </div>
+
+              <div class="booking-steps" data-aos="fade-up" data-aos-delay="300">
+                <div class="step">
+                  <div class="step-icon">
+                    <i class="bi bi-calendar-check"></i>
+                  </div>
+                  <div class="step-content">
+                    <h4>Escolha o Serviço</h4>
+                    <p>Selecione o procedimento desejado</p>
+                  </div>
+                </div>
+                <div class="step">
+                  <div class="step-icon">
+                    <i class="bi bi-clock"></i>
+                  </div>
+                  <div class="step-content">
+                    <h4>Data & Horário</h4>
+                    <p>Escolha o melhor dia e hora para você</p>
+                  </div>
+                </div>
+                <div class="step">
+                  <div class="step-icon">
+                    <i class="bi bi-person-check"></i>
+                  </div>
+                  <div class="step-content">
+                    <h4>Confirme seus Dados</h4>
+                    <p>Preencha suas informações e confirme</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="appointment-form" data-aos="fade-up" data-aos-delay="400">
+                <form action="forms/book-appointment.php" method="post" class="php-email-form">
+                  <div class="row gy-4">
+                    <div class="col-md-6">
+                      <input type="text" name="name" class="form-control" placeholder="Nome Completo" required="">
+                    </div>
+                    <div class="col-md-6">
+                      <input type="email" name="email" class="form-control" placeholder="E-mail" required="">
+                    </div>
+                    <div class="col-md-6">
+                      <input type="tel" name="phone" class="form-control" placeholder="Telefone / WhatsApp" required="">
+                    </div>
+                    <div class="col-md-6">
+                      <select name="service" class="form-select" required="">
+                        <option value="">Selecione o Serviço</option>
+                        <option value="harmonizacao">Harmonização Facial</option>
+                        <option value="botox">Toxina Botulínica (Botox)</option>
+                        <option value="preenchimento">Preenchimento com Ácido Hialurônico</option>
+                        <option value="bioestimulador">Bioestimuladores de Colágeno</option>
+                        <option value="criolipolise">Criolipólise</option>
+                        <option value="radiofrequencia">Radiofrequência</option>
+                        <option value="lipocavitacao">Lipocavitação</option>
+                        <option value="limpeza">Limpeza de Pele</option>
+                        <option value="peeling">Peeling Químico</option>
+                        <option value="laser">Depilação a Laser</option>
+                        <option value="massagem">Massagem Relaxante</option>
+                        <option value="drenagem">Drenagem Linfática</option>
+                        <option value="pos-operatorio">Pós-operatório</option>
+                      </select>
+                    </div>
+                    <div class="col-md-6">
+                      <input type="date" name="date" class="form-control" required="">
+                    </div>
+                    <div class="col-md-6">
+                      <select name="professional" class="form-select" required="">
+                        <option value="">Selecione o Profissional</option>
+                        <option value="ana-beatriz">Dra. Ana Beatriz - Harmonização Facial</option>
+                        <option value="marcus-johnson">Dr. Marcus Johnson - Modelagem Corporal</option>
+                        <option value="rachel-williams">Dra. Rachel Williams - Skin Care</option>
+                        <option value="david-chen">Dr. David Chen - Estética Íntima</option>
+                        <option value="victoria-torres">Dra. Victoria Torres - Depilação a Laser</option>
+                        <option value="benjamin-lee">Dr. Benjamin Lee - Pós-operatório</option>
+                      </select>
+                    </div>
+                    <div class="col-12">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="privacy" required>
+                        <label class="form-check-label small" for="privacy">
+                          Li e concordo com a <a href="privacy.html">Política de Privacidade</a> e com o <a href="terms.html">Termo de Consentimento</a> para realização dos procedimentos.
+                        </label>
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <textarea name="message" class="form-control" rows="4" placeholder="Observações adicionais (ex: alergias, contraindicações, procedimentos anteriores)"></textarea>
+                    </div>
+                    <div class="col-12">
+                      <div class="loading">Enviando...</div>
+                      <div class="error-message"></div>
+                      <div class="sent-message">Seu agendamento foi realizado com sucesso! Em breve enviaremos uma confirmação por e-mail/WhatsApp.</div>
+                      <button type="submit" class="btn-book">Agendar Horário</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+
+              <div class="emergency-info" data-aos="fade-up" data-aos-delay="500">
+                <p><i class="bi bi-exclamation-triangle"></i> Para emergências ou intercorrências estéticas, entre em contato pelo telefone <strong>(11) 99999-9999</strong> ou compareça à nossa clínica.</p>
+                <p class="small text-muted mt-2">*O sistema verifica automaticamente a disponibilidade dos profissionais e evita conflitos de agenda.</p>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Appointmnet Section -->
+
+    </main>
+
+  <div id="footer-placeholder"></div>
+
+  <script src="../../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../../assets/vendor/php-email-form/validate.js"></script>
+  <script src="../../assets/vendor/aos/aos.js"></script>
+  <script src="../../assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="../../assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="../../assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="../../assets/js/main.js"></script>
+</body>
+</html>
