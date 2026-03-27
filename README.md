@@ -1,7 +1,3 @@
-Aqui está um README formal para o seu repositório:
-
----
-
 # Template Shivazen
 
 ## Sobre o Projeto
