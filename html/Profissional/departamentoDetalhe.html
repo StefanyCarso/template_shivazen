@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <script>
+    fetch('../estrutura/head.html')
+      .then(response => response.text())
+      .then(data => {
+        document.head.innerHTML = data;
+      })
+      .catch(error => console.error('Erro ao carregar head:', error));
+  </script>
+</head>
+
+<body class="department-details-page">
+  <div id="header-placeholder"></div>
+
+  <main class="main">
+
+    <!-- Department Details Section -->
+    <section id="department-details" class="department-details section pt-5 mt-4">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row">
+          <div class="col-xl-6 col-lg-7">
+            <div class="department-hero" data-aos="fade-right" data-aos-delay="200">
+              <div class="badge-wrap">
+                <span class="specialty-badge">Estética Avançada</span>
+              </div>
+              <h1 class="department-title">Cuidados Especializados para Sua Beleza</h1>
+              <p class="department-intro">Na Shiva Zen, oferecemos tratamentos estéticos personalizados que combinam tecnologia de ponta com atendimento humanizado, proporcionando resultados naturais e duradouros.</p>
+
+              <div class="key-highlights">
+                <div class="highlight-item">
+                  <span class="highlight-number">5000+</span>
+                  <span class="highlight-text">Clientes Atendidos</span>
+                </div>
+                <div class="highlight-item">
+                  <span class="highlight-number">15+</span>
+                  <span class="highlight-text">Profissionais Especialistas</span>
+                </div>
+                <div class="highlight-item">
+                  <span class="highlight-number">98%</span>
+                  <span class="highlight-text">Satisfação dos Clientes</span>
+                </div>
+              </div>
+
+              <div class="action-group">
+                <a href="./../cliente/agenda.html" class="btn-primary">Agendar Avaliação</a>
+                <a href="./../Profissional/servico.html" class="btn-secondary">
+                  <span>Conheça Nossos Serviços</span>
+                  <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xl-6 col-lg-5">
+            <div class="department-visual" data-aos="fade-left" data-aos-delay="300">
+              <div class="image-container">
+                <img src="./../../assets/img/health/beauty-clinic.webp" alt="Clínica de Estética" class="img-fluid primary-image" onerror="this.src='https://placehold.co/600x500/e9ecef/495057?text=Shiva+Zen+Clínica'">
+                <div class="floating-card" data-aos="zoom-in" data-aos-delay="500">
+                  <div class="card-icon">
+                    <i class="bi bi-flower1"></i>
+                  </div>
+                  <div class="card-content">
+                    <h4>Excelência em Estética</h4>
+                    <p>Resultados naturais com tecnologia de ponta e cuidado humanizado</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="services-overview" data-aos="fade-up" data-aos-delay="400">
+          <div class="row justify-content-center">
+            <div class="col-lg-8">
+              <div class="overview-header">
+                <h3>Nossos Tratamentos Especializados</h3>
+                <p>Oferecemos uma ampla gama de procedimentos estéticos desenvolvidos para atender às necessidades específicas de cada cliente, sempre com segurança e qualidade.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="row gy-4 services-grid">
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+              <div class="service-item">
+                <div class="service-icon">
+                  <i class="bi bi-droplet"></i>
+                </div>
+                <h4>Tratamentos Faciais</h4>
+                <p>Limpeza de pele profunda, microagulhamento, peeling químico e protocolos anti-idade para revitalizar sua pele.</p>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="550">
+              <div class="service-item">
+                <div class="service-icon">
+                  <i class="bi bi-activity"></i>
+                </div>
+                <h4>Modelagem Corporal</h4>
+                <p>Radiofrequência, criolipólise e massagem modeladora para definição corporal e redução de medidas.</p>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
+              <div class="service-item">
+                <div class="service-icon">
+                  <i class="bi bi-syringe"></i>
+                </div>
+                <h4>Procedimentos Injetáveis</h4>
+                <p>Toxina botulínica, preenchimento facial e bioestimuladores de colágeno para harmonização facial.</p>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="650">
+              <div class="service-item">
+                <div class="service-icon">
+                  <i class="bi bi-sun"></i>
+                </div>
+                <h4>Depilação a Laser</h4>
+                <p>Tecnologia de última geração para remoção definitiva dos pelos com segurança e conforto.</p>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="700">
+              <div class="service-item">
+                <div class="service-icon">
+                  <i class="bi bi-flower2"></i>
+                </div>
+                <h4>Massoterapia</h4>
+                <p>Massagens terapêuticas, drenagem linfática e técnicas de relaxamento para bem-estar integral.</p>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="750">
+              <div class="service-item">
+                <div class="service-icon">
+                  <i class="bi bi-shield-check"></i>
+                </div>
+                <h4>Pós-Operatório Especializado</h4>
+                <p>Protocolos personalizados para recuperação após procedimentos cirúrgicos com foco em resultados.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="expert-care-section" data-aos="fade-up" data-aos-delay="800">
+          <div class="row align-items-center">
+            <div class="col-lg-5" data-aos="fade-right" data-aos-delay="900">
+              <div class="expert-image">
+                <img src="./../../assets/img/health/beauty-professionals.webp" alt="Equipe de Especialistas" class="img-fluid" onerror="this.src='https://placehold.co/500x400/e9ecef/495057?text=Nossa+Equipe'">
+              </div>
+            </div>
+
+            <div class="col-lg-7" data-aos="fade-left" data-aos-delay="900">
+              <div class="expert-content">
+                <h3>Excelência em Estética com Atendimento Humanizado</h3>
+                <p class="lead">Na Shiva Zen, combinamos tecnologia avançada com cuidado personalizado para oferecer os melhores resultados aos nossos clientes.</p>
+
+                <div class="expertise-list">
+                  <div class="expertise-item">
+                    <i class="bi bi-check2"></i>
+                    <span>Profissionais especializados e constantemente atualizados</span>
+                  </div>
+                  <div class="expertise-item">
+                    <i class="bi bi-check2"></i>
+                    <span>Equipamentos de última geração e protocolos modernos</span>
+                  </div>
+                  <div class="expertise-item">
+                    <i class="bi bi-check2"></i>
+                    <span>Acompanhamento personalizado desde a avaliação até os cuidados pós-procedimento</span>
+                  </div>
+                  <div class="expertise-item">
+                    <i class="bi bi-check2"></i>
+                    <span>Ambiente acolhedor e preparado para seu bem-estar</span>
+                  </div>
+                </div>
+
+                <div class="contact-info">
+                  <div class="contact-item">
+                    <i class="bi bi-telephone"></i>
+                    <div>
+                      <span class="contact-label">Atendimento e Agendamentos</span>
+                      <span class="contact-value">(17) 99999-9999</span>
+                    </div>
+                  </div>
+                  <div class="contact-item">
+                    <i class="bi bi-calendar-check"></i>
+                    <div>
+                      <span class="contact-label">Horário de Funcionamento</span>
+                      <span class="contact-value">Segunda a Sexta, 8h às 20h | Sábado, 8h às 14h</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Department Details Section -->
+
+  </main>
+
+  <div id="footer-placeholder"></div>
+
+  <script src="../../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../../assets/vendor/php-email-form/validate.js"></script>
+  <script src="../../assets/vendor/aos/aos.js"></script>
+  <script src="../../assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="../../assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="../../assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="../../assets/js/main.js"></script>
+</body>
+</html>

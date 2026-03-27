@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <script>
+    fetch('../estrutura/head.html')
+      .then(response => response.text())
+      .then(data => {
+        document.head.innerHTML = data;
+      })
+      .catch(error => console.error('Erro ao carregar head:', error));
+  </script>
+</head>
+
+<body class="doctors-page">
+  <div id="header-placeholder"></div>
+
+  <main class="main">
+
+    <!-- Doctors Section -->
+    <section id="doctors" class="doctors section pt-5 mt-4">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="doctor-card">
+              <div class="doctor-image">
+                <img src="./../../assets/img/health/staff-1.webp" alt="Dra. Ana Beatriz" class="img-fluid" onerror="this.src='https://placehold.co/400x400/e9ecef/495057?text=Dra.+Ana+Beatriz'">
+                <div class="doctor-overlay">
+                  <div class="social-links">
+                    <a href="#"><i class="bi bi-linkedin"></i></a>
+                    <a href="#"><i class="bi bi-envelope"></i></a>
+                    <a href="#"><i class="bi bi-phone"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="doctor-content">
+                <h4>Dra. Ana Beatriz</h4>
+                <span class="specialty">Dermatologia & Estética</span>
+                <p>Especialista em tratamentos faciais e rejuvenescimento, com mais de 12 anos de experiência em procedimentos estéticos de alta performance.</p>
+                <div class="doctor-meta">
+                  <div class="experience">
+                    <i class="bi bi-award"></i>
+                    <span>12+ Anos de Experiência</span>
+                  </div>
+                  <div class="department">
+                    <i class="bi bi-building"></i>
+                    <span>Dermatologia</span>
+                  </div>
+                </div>
+                <a href="./../cliente/agenda.html" class="btn-appointment">Agendar Consulta</a>
+              </div>
+            </div>
+          </div><!-- End Doctor Card -->
+
+          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="doctor-card">
+              <div class="doctor-image">
+                <img src="./../../assets/img/health/staff-2.webp" alt="Dra. Camila Mendes" class="img-fluid" onerror="this.src='https://placehold.co/400x400/e9ecef/495057?text=Dra.+Camila+Mendes'">
+                <div class="doctor-overlay">
+                  <div class="social-links">
+                    <a href="#"><i class="bi bi-linkedin"></i></a>
+                    <a href="#"><i class="bi bi-envelope"></i></a>
+                    <a href="#"><i class="bi bi-phone"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="doctor-content">
+                <h4>Dra. Camila Mendes</h4>
+                <span class="specialty">Harmonização Facial</span>
+                <p>Referência em harmonização facial e toxina botulínica, proporcionando resultados naturais e personalizados para cada cliente.</p>
+                <div class="doctor-meta">
+                  <div class="experience">
+                    <i class="bi bi-award"></i>
+                    <span>10+ Anos de Experiência</span>
+                  </div>
+                  <div class="department">
+                    <i class="bi bi-building"></i>
+                    <span>Harmonização Facial</span>
+                  </div>
+                </div>
+                <a href="./../cliente/agenda.html" class="btn-appointment">Agendar Consulta</a>
+              </div>
+            </div>
+          </div><!-- End Doctor Card -->
+
+          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="doctor-card">
+              <div class="doctor-image">
+                <img src="./../../assets/img/health/staff-3.webp" alt="Dr. Ricardo Alves" class="img-fluid" onerror="this.src='https://placehold.co/400x400/e9ecef/495057?text=Dr.+Ricardo+Alves'">
+                <div class="doctor-overlay">
+                  <div class="social-links">
+                    <a href="#"><i class="bi bi-linkedin"></i></a>
+                    <a href="#"><i class="bi bi-envelope"></i></a>
+                    <a href="#"><i class="bi bi-phone"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="doctor-content">
+                <h4>Dr. Ricardo Alves</h4>
+                <span class="specialty">Tratamentos Corporais</span>
+                <p>Especialista em modelagem corporal, criolipólise e radiofrequência, com foco em resultados eficazes e bem-estar.</p>
+                <div class="doctor-meta">
+                  <div class="experience">
+                    <i class="bi bi-award"></i>
+                    <span>15+ Anos de Experiência</span>
+                  </div>
+                  <div class="department">
+                    <i class="bi bi-building"></i>
+                    <span>Estética Corporal</span>
+                  </div>
+                </div>
+                <a href="./../cliente/agenda.html" class="btn-appointment">Agendar Consulta</a>
+              </div>
+            </div>
+          </div><!-- End Doctor Card -->
+
+          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="doctor-card">
+              <div class="doctor-image">
+                <img src="./../../assets/img/health/staff-4.webp" alt="Dra. Fernanda Lima" class="img-fluid" onerror="this.src='https://placehold.co/400x400/e9ecef/495057?text=Dra.+Fernanda+Lima'">
+                <div class="doctor-overlay">
+                  <div class="social-links">
+                    <a href="#"><i class="bi bi-linkedin"></i></a>
+                    <a href="#"><i class="bi bi-envelope"></i></a>
+                    <a href="#"><i class="bi bi-phone"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="doctor-content">
+                <h4>Dra. Fernanda Lima</h4>
+                <span class="specialty">Massoterapia & Relaxamento</span>
+                <p>Terapeuta especializada em massagens terapêuticas, drenagem linfática e técnicas de relaxamento para bem-estar integral.</p>
+                <div class="doctor-meta">
+                  <div class="experience">
+                    <i class="bi bi-award"></i>
+                    <span>8+ Anos de Experiência</span>
+                  </div>
+                  <div class="department">
+                    <i class="bi bi-building"></i>
+                    <span>Massoterapia</span>
+                  </div>
+                </div>
+                <a href="./../cliente/agenda.html" class="btn-appointment">Agendar Consulta</a>
+              </div>
+            </div>
+          </div><!-- End Doctor Card -->
+
+          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="500">
+            <div class="doctor-card">
+              <div class="doctor-image">
+                <img src="./../../assets/img/health/staff-5.webp" alt="Dra. Patrícia Souza" class="img-fluid" onerror="this.src='https://placehold.co/400x400/e9ecef/495057?text=Dra.+Patrícia+Souza'">
+                <div class="doctor-overlay">
+                  <div class="social-links">
+                    <a href="#"><i class="bi bi-linkedin"></i></a>
+                    <a href="#"><i class="bi bi-envelope"></i></a>
+                    <a href="#"><i class="bi bi-phone"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="doctor-content">
+                <h4>Dra. Patrícia Souza</h4>
+                <span class="specialty">Depilação a Laser</span>
+                <p>Especialista em depilação a laser com equipamentos de última geração, garantindo conforto e resultados duradouros.</p>
+                <div class="doctor-meta">
+                  <div class="experience">
+                    <i class="bi bi-award"></i>
+                    <span>7+ Anos de Experiência</span>
+                  </div>
+                  <div class="department">
+                    <i class="bi bi-building"></i>
+                    <span>Laser & Tecnologia</span>
+                  </div>
+                </div>
+                <a href="./../cliente/agenda.html" class="btn-appointment">Agendar Consulta</a>
+              </div>
+            </div>
+          </div><!-- End Doctor Card -->
+
+          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="600">
+            <div class="doctor-card">
+              <div class="doctor-image">
+                <img src="./../../assets/img/health/staff-6.webp" alt="Dr. Marcelo Ribeiro" class="img-fluid" onerror="this.src='https://placehold.co/400x400/e9ecef/495057?text=Dr.+Marcelo+Ribeiro'">
+                <div class="doctor-overlay">
+                  <div class="social-links">
+                    <a href="#"><i class="bi bi-linkedin"></i></a>
+                    <a href="#"><i class="bi bi-envelope"></i></a>
+                    <a href="#"><i class="bi bi-phone"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="doctor-content">
+                <h4>Dr. Marcelo Ribeiro</h4>
+                <span class="specialty">Procedimentos Injetáveis</span>
+                <p>Especialista em bioestimuladores de colágeno, preenchimento facial e procedimentos minimamente invasivos.</p>
+                <div class="doctor-meta">
+                  <div class="experience">
+                    <i class="bi bi-award"></i>
+                    <span>9+ Anos de Experiência</span>
+                  </div>
+                  <div class="department">
+                    <i class="bi bi-building"></i>
+                    <span>Estética Avançada</span>
+                  </div>
+                </div>
+                <a href="./../cliente/agenda.html" class="btn-appointment">Agendar Consulta</a>
+              </div>
+            </div>
+          </div><!-- End Doctor Card -->
+
+          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="700">
+            <div class="doctor-card">
+              <div class="doctor-image">
+                <img src="./../../assets/img/health/staff-7.webp" alt="Dra. Juliana Costa" class="img-fluid" onerror="this.src='https://placehold.co/400x400/e9ecef/495057?text=Dra.+Juliana+Costa'">
+                <div class="doctor-overlay">
+                  <div class="social-links">
+                    <a href="#"><i class="bi bi-linkedin"></i></a>
+                    <a href="#"><i class="bi bi-envelope"></i></a>
+                    <a href="#"><i class="bi bi-phone"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="doctor-content">
+                <h4>Dra. Juliana Costa</h4>
+                <span class="specialty">Cuidados Pós-Operatórios</span>
+                <p>Especialista em recuperação pós-cirúrgica, com protocolos personalizados para cada necessidade do paciente.</p>
+                <div class="doctor-meta">
+                  <div class="experience">
+                    <i class="bi bi-award"></i>
+                    <span>11+ Anos de Experiência</span>
+                  </div>
+                  <div class="department">
+                    <i class="bi bi-building"></i>
+                    <span>Pós-Operatório</span>
+                  </div>
+                </div>
+                <a href="./../cliente/agenda.html" class="btn-appointment">Agendar Consulta</a>
+              </div>
+            </div>
+          </div><!-- End Doctor Card -->
+
+          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="800">
+            <div class="doctor-card">
+              <div class="doctor-image">
+                <img src="./../../assets/img/health/staff-8.webp" alt="Dra. Beatriz Nunes" class="img-fluid" onerror="this.src='https://placehold.co/400x400/e9ecef/495057?text=Dra.+Beatriz+Nunes'">
+                <div class="doctor-overlay">
+                  <div class="social-links">
+                    <a href="#"><i class="bi bi-linkedin"></i></a>
+                    <a href="#"><i class="bi bi-envelope"></i></a>
+                    <a href="#"><i class="bi bi-phone"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="doctor-content">
+                <h4>Dra. Beatriz Nunes</h4>
+                <span class="specialty">Nutrição & Bem-Estar</span>
+                <p>Nutricionista especializada em estética e emagrecimento, com foco em saúde integral e qualidade de vida.</p>
+                <div class="doctor-meta">
+                  <div class="experience">
+                    <i class="bi bi-award"></i>
+                    <span>8+ Anos de Experiência</span>
+                  </div>
+                  <div class="department">
+                    <i class="bi bi-building"></i>
+                    <span>Nutrição Estética</span>
+                  </div>
+                </div>
+                <a href="./../cliente/agenda.html" class="btn-appointment">Agendar Consulta</a>
+              </div>
+            </div>
+          </div><!-- End Doctor Card -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Doctors Section -->
+
+  </main>
+
+  <div id="footer-placeholder"></div>
+
+  <script src="../../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../../assets/vendor/php-email-form/validate.js"></script>
+  <script src="../../assets/vendor/aos/aos.js"></script>
+  <script src="../../assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="../../assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="../../assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="../../assets/js/main.js"></script>
+</body>
+</html>

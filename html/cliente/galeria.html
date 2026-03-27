@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <script>
+    fetch('../estrutura/head.html')
+      .then(response => response.text())
+      .then(data => {
+        document.head.innerHTML = data;
+      })
+      .catch(error => console.error('Erro ao carregar head:', error));
+  </script>
+</head>
+
+<body class="gallery-page">
+  <div id="header-placeholder"></div>
+
+  <main class="main">
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery section pt-5 mt-4">
+
+      <div class="container-fluid" data-aos="fade-up" data-aos-delay="100">
+
+        <!-- Gallery Header -->
+        <div class="row justify-content-center mb-5">
+          <div class="col-lg-8 text-center">
+            <h2 class="display-6 fw-light mb-3">Nossa Estrutura</h2>
+            <p class="text-muted">Conheça o ambiente acolhedor e moderno da Shiva Zen, preparado para oferecer o melhor em bem-estar e tratamentos estéticos.</p>
+          </div>
+        </div>
+
+        <div class="row gy-4 justify-content-center">
+
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="./../../assets/img/gallery/recepcao-shiva-zen.webp" class="img-fluid" alt="Recepção Shiva Zen" onerror="this.src='https://placehold.co/600x400/e9ecef/495057?text=Recepção+Shiva+Zen'">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="./../../assets/img/gallery/recepcao-shiva-zen.webp" title="Recepção Shiva Zen" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="gallery-single.html" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+              <div class="gallery-caption">
+                <p class="mt-2 small text-muted text-center">Recepção Acolhedora</p>
+              </div>
+            </div>
+          </div><!-- End Gallery Item -->
+
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="./../../assets/img/gallery/sala-tratamentos-faciais.webp" class="img-fluid" alt="Sala de Tratamentos Faciais" onerror="this.src='https://placehold.co/600x400/e9ecef/495057?text=Sala+de+Tratamentos+Faciais'">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="./../../assets/img/gallery/sala-tratamentos-faciais.webp" title="Sala de Tratamentos Faciais" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="gallery-single.html" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+              <div class="gallery-caption">
+                <p class="mt-2 small text-muted text-center">Tratamentos Faciais</p>
+              </div>
+            </div>
+          </div><!-- End Gallery Item -->
+
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="./../../assets/img/gallery/sala-corpo.webp" class="img-fluid" alt="Sala de Tratamentos Corporais" onerror="this.src='https://placehold.co/600x400/e9ecef/495057?text=Sala+de+Tratamentos+Corporais'">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="./../../assets/img/gallery/sala-corpo.webp" title="Sala de Tratamentos Corporais" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="gallery-single.html" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+              <div class="gallery-caption">
+                <p class="mt-2 small text-muted text-center">Tratamentos Corporais</p>
+              </div>
+            </div>
+          </div><!-- End Gallery Item -->
+
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="./../../assets/img/gallery/sala-laser.webp" class="img-fluid" alt="Sala de Depilação a Laser" onerror="this.src='https://placehold.co/600x400/e9ecef/495057?text=Sala+de+Depilação+a+Laser'">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="./../../assets/img/gallery/sala-laser.webp" title="Sala de Depilação a Laser" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="gallery-single.html" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+              <div class="gallery-caption">
+                <p class="mt-2 small text-muted text-center">Depilação a Laser</p>
+              </div>
+            </div>
+          </div><!-- End Gallery Item -->
+
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="./../../assets/img/gallery/sala-massagem.webp" class="img-fluid" alt="Sala de Massoterapia" onerror="this.src='https://placehold.co/600x400/e9ecef/495057?text=Sala+de+Massoterapia'">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="./../../assets/img/gallery/sala-massagem.webp" title="Sala de Massoterapia" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="gallery-single.html" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+              <div class="gallery-caption">
+                <p class="mt-2 small text-muted text-center">Massoterapia & Relaxamento</p>
+              </div>
+            </div>
+          </div><!-- End Gallery Item -->
+
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="./../../assets/img/gallery/equipamentos.webp" class="img-fluid" alt="Equipamentos Modernos" onerror="this.src='https://placehold.co/600x400/e9ecef/495057?text=Equipamentos+Modernos'">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="./../../assets/img/gallery/equipamentos.webp" title="Equipamentos Modernos" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="gallery-single.html" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+              <div class="gallery-caption">
+                <p class="mt-2 small text-muted text-center">Tecnologia de Ponta</p>
+              </div>
+            </div>
+          </div><!-- End Gallery Item -->
+
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="./../../assets/img/gallery/espaco-relaxamento.webp" class="img-fluid" alt="Espaço de Relaxamento" onerror="this.src='https://placehold.co/600x400/e9ecef/495057?text=Espaço+de+Relaxamento'">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="./../../assets/img/gallery/espaco-relaxamento.webp" title="Espaço de Relaxamento" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="gallery-single.html" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+              <div class="gallery-caption">
+                <p class="mt-2 small text-muted text-center">Área de Relaxamento</p>
+              </div>
+            </div>
+          </div><!-- End Gallery Item -->
+
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="./../../assets/img/gallery/consultorio.webp" class="img-fluid" alt="Consultório de Avaliação" onerror="this.src='https://placehold.co/600x400/e9ecef/495057?text=Consultório+de+Avaliação'">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="./../../assets/img/gallery/consultorio.webp" title="Consultório de Avaliação" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="gallery-single.html" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+              <div class="gallery-caption">
+                <p class="mt-2 small text-muted text-center">Consultório de Avaliação</p>
+              </div>
+            </div>
+          </div><!-- End Gallery Item -->
+
+        </div>
+
+        <!-- Additional Info -->
+        <div class="row justify-content-center mt-5">
+          <div class="col-lg-8 text-center">
+            <div class="alert alert-light border rounded-4 p-4 bg-light">
+              <i class="bi bi-camera fs-1 text-primary mb-3 d-block"></i>
+              <p class="mb-0 text-muted">Venha conhecer nossas instalações pessoalmente. Agende uma visita gratuita e conheça o espaço preparado para o seu bem-estar.</p>
+              <a href="avaliacao.html" class="btn btn-primary mt-3">Agendar Visita</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Gallery Section -->
+
+  </main>
+
+  <div id="footer-placeholder"></div>
+
+  <script src="../../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../../assets/vendor/php-email-form/validate.js"></script>
+  <script src="../../assets/vendor/aos/aos.js"></script>
+  <script src="../../assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="../../assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="../../assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="../../assets/js/main.js"></script>
+</body>
+</html>

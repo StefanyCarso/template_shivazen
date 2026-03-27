@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <script>
+    fetch('../estrutura/head.html')
+      .then(response => response.text())
+      .then(data => {
+        document.head.innerHTML = data;
+      })
+      .catch(error => console.error('Erro ao carregar head:', error));
+  </script>
+</head>
+
+<body class="services-page">
+  <div id="header-placeholder"></div>
+
+  <main class="main">
+
+    <!-- Services Section -->
+    <section id="services" class="services section pt-5 mt-4">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-item">
+              <div class="service-image">
+                <img src="./../../assets/img/health/facial-treatment.webp" alt="Tratamentos Faciais" class="img-fluid" onerror="this.src='https://placehold.co/400x300/e9ecef/495057?text=Tratamentos+Faciais'">
+                <div class="service-overlay">
+                  <i class="fas fa-smile"></i>
+                </div>
+              </div>
+              <div class="service-content">
+                <h3>Tratamentos Faciais</h3>
+                <p>Rejuvenesça sua pele com protocolos personalizados: limpeza de pele profunda, peeling químico, microagulhamento e harmonização facial.</p>
+                <div class="service-features">
+                  <span class="feature-item"><i class="fas fa-check"></i> Limpeza de Pele</span>
+                  <span class="feature-item"><i class="fas fa-check"></i> Microagulhamento</span>
+                </div>
+                <a href="./../Profissional/servicoDetalhe.html" class="service-btn">
+                  <span>Saiba Mais</span>
+                  <i class="fas fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="250">
+            <div class="service-item">
+              <div class="service-image">
+                <img src="./../../assets/img/health/body-treatment.webp" alt="Tratamentos Corporais" class="img-fluid" onerror="this.src='https://placehold.co/400x300/e9ecef/495057?text=Tratamentos+Corporais'">
+                <div class="service-overlay">
+                  <i class="fas fa-hand-sparkles"></i>
+                </div>
+              </div>
+              <div class="service-content">
+                <h3>Tratamentos Corporais</h3>
+                <p>Modelagem corporal, redução de medidas e combate à celulite com técnicas modernas como radiofrequência, criolipólise e drenagem linfática.</p>
+                <div class="service-features">
+                  <span class="feature-item"><i class="fas fa-check"></i> Radiofrequência</span>
+                  <span class="feature-item"><i class="fas fa-check"></i> Criolipólise</span>
+                </div>
+                <a href="./../Profissional/servicoDetalhe.html" class="service-btn">
+                  <span>Saiba Mais</span>
+                  <i class="fas fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-item">
+              <div class="service-image">
+                <img src="./../../assets/img/health/massage.webp" alt="Massoterapia" class="img-fluid" onerror="this.src='https://placehold.co/400x300/e9ecef/495057?text=Massoterapia'">
+                <div class="service-overlay">
+                  <i class="fas fa-spa"></i>
+                </div>
+              </div>
+              <div class="service-content">
+                <h3>Massoterapia & Relaxamento</h3>
+                <p>Massagens terapêuticas que aliviam tensões, melhoram a circulação e promovem bem-estar físico e mental.</p>
+                <div class="service-features">
+                  <span class="feature-item"><i class="fas fa-check"></i> Massagem Relaxante</span>
+                  <span class="feature-item"><i class="fas fa-check"></i> Drenagem Linfática</span>
+                </div>
+                <a href="./../Profissional/servicoDetalhe.html" class="service-btn">
+                  <span>Saiba Mais</span>
+                  <i class="fas fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="350">
+            <div class="service-item">
+              <div class="service-image">
+                <img src="./../../assets/img/health/laser-hair-removal.webp" alt="Depilação a Laser" class="img-fluid" onerror="this.src='https://placehold.co/400x300/e9ecef/495057?text=Depilação+a+Laser'">
+                <div class="service-overlay">
+                  <i class="fas fa-sun"></i>
+                </div>
+              </div>
+              <div class="service-content">
+                <h3>Depilação a Laser</h3>
+                <p>Tecnologia de última geração para remoção definitiva dos pelos, com segurança e conforto para todos os tipos de pele.</p>
+                <div class="service-features">
+                  <span class="feature-item"><i class="fas fa-check"></i> Alta Tecnologia</span>
+                  <span class="feature-item"><i class="fas fa-check"></i> Resultados Duradouros</span>
+                </div>
+                <a href="./../Profissional/servicoDetalhe.html" class="service-btn">
+                  <span>Saiba Mais</span>
+                  <i class="fas fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="service-item">
+              <div class="service-image">
+                <img src="./../../assets/img/health/aesthetic-procedures.webp" alt="Procedimentos Estéticos" class="img-fluid" onerror="this.src='https://placehold.co/400x300/e9ecef/495057?text=Procedimentos+Estéticos'">
+                <div class="service-overlay">
+                  <i class="fas fa-syringe"></i>
+                </div>
+              </div>
+              <div class="service-content">
+                <h3>Procedimentos Estéticos</h3>
+                <p>Preenchimento facial, toxina botulínica e bioestimuladores de colágeno para realçar sua beleza de forma natural.</p>
+                <div class="service-features">
+                  <span class="feature-item"><i class="fas fa-check"></i> Toxina Botulínica</span>
+                  <span class="feature-item"><i class="fas fa-check"></i> Preenchimento Facial</span>
+                </div>
+                <a href="./../Profissional/servicoDetalhe.html" class="service-btn">
+                  <span>Saiba Mais</span>
+                  <i class="fas fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="450">
+            <div class="service-item">
+              <div class="service-image">
+                <img src="./../../assets/img/health/post-operative.webp" alt="Pós-Operatório" class="img-fluid" onerror="this.src='https://placehold.co/400x300/e9ecef/495057?text=Pós-Operatório'">
+                <div class="service-overlay">
+                  <i class="fas fa-heartbeat"></i>
+                </div>
+              </div>
+              <div class="service-content">
+                <h3>Cuidados Pós-Operatórios</h3>
+                <p>Protocolos especializados para recuperação após procedimentos cirúrgicos, com foco em resultados e bem-estar.</p>
+                <div class="service-features">
+                  <span class="feature-item"><i class="fas fa-check"></i> Drenagem Especializada</span>
+                  <span class="feature-item"><i class="fas fa-check"></i> Acompanhamento Personalizado</span>
+                </div>
+                <a href="./../Profissional/servicoDetalhe.html" class="service-btn">
+                  <span>Saiba Mais</span>
+                  <i class="fas fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div><!-- End Service Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Services Section -->
+
+  </main>
+
+  <div id="footer-placeholder"></div>
+
+  <script src="../../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../../assets/vendor/php-email-form/validate.js"></script>
+  <script src="../../assets/vendor/aos/aos.js"></script>
+  <script src="../../assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="../../assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="../../assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="../../assets/js/main.js"></script>
+</body>
+</html>

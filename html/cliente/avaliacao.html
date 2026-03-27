@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <script>
+    fetch('../estrutura/head.html')
+      .then(response => response.text())
+      .then(data => {
+        document.head.innerHTML = data;
+      })
+      .catch(error => console.error('Erro ao carregar head:', error));
+  </script>
+</head>
+
+<body class="testimonials-page">
+  <div id="header-placeholder"></div>
+
+  <main class="main">
+
+    <!-- Featured Testimonials Section -->
+    <section id="featured-testimonials" class="featured-testimonials section pt-5 mt-4">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <!-- Section Header -->
+        <div class="row justify-content-center mb-5">
+          <div class="col-lg-8 text-center">
+            <h2 class="display-6 fw-light mb-3">O Que Nossos Clientes Dizem</h2>
+            <p class="text-muted">A satisfação dos nossos clientes é o nosso maior reconhecimento. Confira os depoimentos de quem já viveu a experiência Shiva Zen.</p>
+          </div>
+        </div>
+
+        <div class="testimonials-14 swiper init-swiper">
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 600,
+              "autoplay": {
+                "delay": 5000
+              },
+              "slidesPerView": 3,
+              "spaceBetween": 24,
+              "pagination": {
+                "el": ".swiper-pagination",
+                "type": "bullets",
+                "clickable": true
+              },
+              "breakpoints": {
+                "320": {
+                  "slidesPerView": 1,
+                  "spaceBetween": 16
+                },
+                "768": {
+                  "slidesPerView": 2,
+                  "spaceBetween": 24
+                },
+                "1200": {
+                  "slidesPerView": 3,
+                  "spaceBetween": 24
+                }
+              }
+            }
+          </script>
+
+          <div class="swiper-wrapper">
+
+            <!-- Testimonial Item 1 -->
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                </div>
+                <p>"Excelente atendimento! Fiz o tratamento de harmonização facial com a Dra. Camila e o resultado ficou muito natural. Profissionais super atenciosos e ambiente acolhedor. Recomendo demais!"</p>
+                <div class="profile">
+                  <img src="./../../assets/img/person/person-f-5.webp" class="testimonial-img" alt="Cliente" loading="lazy" onerror="this.src='https://placehold.co/100x100/e9ecef/495057?text=Cliente'">
+                  <div class="info">
+                    <h4>Ana Paula Silva <i class="bi bi-patch-check-fill"></i></h4>
+                    <span>@anapaulasilva</span>
+                  </div>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <!-- Testimonial Item 2 -->
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                </div>
+                <p>"Fiz o tratamento com radiofrequência para flacidez abdominal e os resultados superaram minhas expectativas. Equipe muito profissional e cuidadosa. Já indiquei para todas as amigas!"</p>
+                <div class="profile">
+                  <img src="./../../assets/img/person/person-f-9.webp" class="testimonial-img" alt="Cliente" loading="lazy" onerror="this.src='https://placehold.co/100x100/e9ecef/495057?text=Cliente'">
+                  <div class="info">
+                    <h4>Mariana Costa <i class="bi bi-patch-check-fill"></i></h4>
+                    <span>@marianacosta</span>
+                  </div>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <!-- Testimonial Item 3 -->
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                </div>
+                <p>"A massagem relaxante é simplesmente divina! Ambiente tranquilo e terapeuta muito habilidosa. Saí de lá renovada. Com certeza voltarei sempre. Nota 10 para a Shiva Zen!"</p>
+                <div class="profile">
+                  <img src="./../../assets/img/person/person-f-11.webp" class="testimonial-img" alt="Cliente" loading="lazy" onerror="this.src='https://placehold.co/100x100/e9ecef/495057?text=Cliente'">
+                  <div class="info">
+                    <h4>Fernanda Oliveira <i class="bi bi-patch-check-fill"></i></h4>
+                    <span>@fernandaoliveira</span>
+                  </div>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <!-- Testimonial Item 4 -->
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                </div>
+                <p>"Realizei a depilação a laser e foi uma experiência muito confortável. Equipamento moderno e profissional extremamente cuidadosa. Resultado incrível! Super recomendo."</p>
+                <div class="profile">
+                  <img src="./../../assets/img/person/person-f-12.webp" class="testimonial-img" alt="Cliente" loading="lazy" onerror="this.src='https://placehold.co/100x100/e9ecef/495057?text=Cliente'">
+                  <div class="info">
+                    <h4>Camila Rodrigues <i class="bi bi-patch-check-fill"></i></h4>
+                    <span>@camilarodrigues</span>
+                  </div>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <!-- Testimonial Item 5 -->
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                </div>
+                <p>"O tratamento para acne mudou minha pele completamente! A Dra. Ana foi muito atenciosa e explicou todo o processo. Me sinto muito mais confiante agora. Gratidão Shiva Zen!"</p>
+                <div class="profile">
+                  <img src="./../../assets/img/person/person-f-13.webp" class="testimonial-img" alt="Cliente" loading="lazy" onerror="this.src='https://placehold.co/100x100/e9ecef/495057?text=Cliente'">
+                  <div class="info">
+                    <h4>Juliana Santos <i class="bi bi-patch-check-fill"></i></h4>
+                    <span>@julianasantos</span>
+                  </div>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <!-- Testimonial Item 6 -->
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                </div>
+                <p>"Ambiente impecável, profissionais qualificados e atendimento personalizado. Fiz o tratamento de drenagem linfática pós-cirúrgica e a recuperação foi muito mais rápida. Nota mil!"</p>
+                <div class="profile">
+                  <img src="./../../assets/img/person/person-f-8.webp" class="testimonial-img" alt="Cliente" loading="lazy" onerror="this.src='https://placehold.co/100x100/e9ecef/495057?text=Cliente'">
+                  <div class="info">
+                    <h4>Patrícia Almeida <i class="bi bi-patch-check-fill"></i></h4>
+                    <span>@patriciaalmeida</span>
+                  </div>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+          </div>
+
+          <div class="swiper-pagination"></div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Featured Testimonials Section -->
+
+    <!-- Testimonials Grid Section -->
+    <section id="testimonials" class="testimonials section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row g-4">
+          <!-- Testimonial Item 1 -->
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="testimonial-item">
+              <div class="stars">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </div>
+              <p>"Fiz o tratamento de microagulhamento e minha pele ficou renovada! Ótimo custo-benefício e profissionais muito competentes. A Shiva Zen se tornou minha referência em estética."</p>
+              <div class="testimonial-footer">
+                <div class="testimonial-author">
+                  <img src="./../../assets/img/person/person-f-3.webp" alt="Cliente" class="img-fluid rounded-circle" loading="lazy" onerror="this.src='https://placehold.co/80x80/e9ecef/495057?text=Cliente'">
+                  <div>
+                    <h5>Carolina Mendes</h5>
+                    <span>Designer de Moda</span>
+                  </div>
+                </div>
+                <div class="quote-icon">
+                  <i class="bi bi-quote"></i>
+                </div>
+              </div>
+            </div>
+          </div><!-- End Testimonial Item -->
+
+          <!-- Testimonial Item 2 -->
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="testimonial-item">
+              <div class="stars">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </div>
+              <p>"Excelente experiência com a criolipólise. Perdi medidas e me sinto muito mais confiante. O acompanhamento foi impecável, desde a avaliação até o pós-tratamento. Recomendo!"</p>
+              <div class="testimonial-footer">
+                <div class="testimonial-author">
+                  <img src="./../../assets/img/person/person-f-6.webp" alt="Cliente" class="img-fluid rounded-circle" loading="lazy" onerror="this.src='https://placehold.co/80x80/e9ecef/495057?text=Cliente'">
+                  <div>
+                    <h5>Renata Souza</h5>
+                    <span>Empresária</span>
+                  </div>
+                </div>
+                <div class="quote-icon">
+                  <i class="bi bi-quote"></i>
+                </div>
+              </div>
+            </div>
+          </div><!-- End Testimonial Item -->
+
+          <!-- Testimonial Item 3 -->
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="testimonial-item">
+              <div class="stars">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </div>
+              <p>"Ambiente super acolhedor e profissionais extremamente qualificados. Fiz limpeza de pele e ficou impecável. A Shiva Zen é sinônimo de qualidade e cuidado. Nota 10!"</p>
+              <div class="testimonial-footer">
+                <div class="testimonial-author">
+                  <img src="./../../assets/img/person/person-f-4.webp" alt="Cliente" class="img-fluid rounded-circle" loading="lazy" onerror="this.src='https://placehold.co/80x80/e9ecef/495057?text=Cliente'">
+                  <div>
+                    <h5>Luciana Ferreira</h5>
+                    <span>Arquiteta</span>
+                  </div>
+                </div>
+                <div class="quote-icon">
+                  <i class="bi bi-quote"></i>
+                </div>
+              </div>
+            </div>
+          </div><!-- End Testimonial Item -->
+
+          <!-- Testimonial Item 4 -->
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="testimonial-item">
+              <div class="stars">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </div>
+              <p>"Fiz toxina botulínica com a Dra. Ana e o resultado ficou muito natural. Ela é super atenciosa e explica todo o procedimento. Saí muito satisfeita. Recomendo a todos!"</p>
+              <div class="testimonial-footer">
+                <div class="testimonial-author">
+                  <img src="./../../assets/img/person/person-f-7.webp" alt="Cliente" class="img-fluid rounded-circle" loading="lazy" onerror="this.src='https://placehold.co/80x80/e9ecef/495057?text=Cliente'">
+                  <div>
+                    <h5>Isabela Martins</h5>
+                    <span>Médica</span>
+                  </div>
+                </div>
+                <div class="quote-icon">
+                  <i class="bi bi-quote"></i>
+                </div>
+              </div>
+            </div>
+          </div><!-- End Testimonial Item -->
+
+          <!-- Testimonial Item 5 -->
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="500">
+            <div class="testimonial-item">
+              <div class="stars">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </div>
+              <p>"Ótimo atendimento desde o agendamento online até o pós-procedimento. Fiz um tratamento corporal e os resultados superaram minhas expectativas. Parabéns à equipe!"</p>
+              <div class="testimonial-footer">
+                <div class="testimonial-author">
+                  <img src="./../../assets/img/person/person-f-10.webp" alt="Cliente" class="img-fluid rounded-circle" loading="lazy" onerror="this.src='https://placehold.co/80x80/e9ecef/495057?text=Cliente'">
+                  <div>
+                    <h5>Aline Barbosa</h5>
+                    <span>Fisioterapeuta</span>
+                  </div>
+                </div>
+                <div class="quote-icon">
+                  <i class="bi bi-quote"></i>
+                </div>
+              </div>
+            </div>
+          </div><!-- End Testimonial Item -->
+
+          <!-- Testimonial Item 6 -->
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="600">
+            <div class="testimonial-item">
+              <div class="stars">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </div>
+              <p>"A Shiva Zen é referência em estética na região. Profissionais capacitados, ambiente impecável e resultados excelentes. Já indiquei para toda minha família e amigos!"</p>
+              <div class="testimonial-footer">
+                <div class="testimonial-author">
+                  <img src="./../../assets/img/person/person-m-8.webp" alt="Cliente" class="img-fluid rounded-circle" loading="lazy" onerror="this.src='https://placehold.co/80x80/e9ecef/495057?text=Cliente'">
+                  <div>
+                    <h5>Ricardo Oliveira</h5>
+                    <span>Advogado</span>
+                  </div>
+                </div>
+                <div class="quote-icon">
+                  <i class="bi bi-quote"></i>
+                </div>
+              </div>
+            </div>
+          </div><!-- End Testimonial Item -->
+
+        </div>
+
+        <!-- Call to Action -->
+        <div class="row justify-content-center mt-5">
+          <div class="col-lg-8 text-center">
+            <div class="alert alert-light border rounded-4 p-4 bg-light">
+              <i class="bi bi-chat-dots fs-1 text-primary mb-3 d-block"></i>
+              <p class="mb-0 text-muted">Compartilhe sua experiência também! Seu depoimento é muito importante para nós e ajuda outras pessoas a descobrirem o cuidado Shiva Zen.</p>
+              <a href="agenda.html" class="btn btn-primary mt-3">Agende sua Avaliação</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Testimonials Section -->
+
+  </main>
+
+  <div id="footer-placeholder"></div>
+
+  <script src="../../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../../assets/vendor/php-email-form/validate.js"></script>
+  <script src="../../assets/vendor/aos/aos.js"></script>
+  <script src="../../assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="../../assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="../../assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="../../assets/js/main.js"></script>
+</body>
+</html>

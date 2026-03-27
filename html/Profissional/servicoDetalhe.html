@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <script>
+    fetch('../estrutura/head.html')
+      .then(response => response.text())
+      .then(data => {
+        document.head.innerHTML = data;
+      })
+      .catch(error => console.error('Erro ao carregar head:', error));
+  </script>
+</head>
+
+<body class="service-details-page">
+  <div id="header-placeholder"></div>
+
+  <main class="main">
+
+    <!-- Service Details Section -->
+    <section id="service-details-2" class="service-details-2 section pt-5 mt-4">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row">
+
+          <div class="col-lg-8 mx-auto text-center mb-5" data-aos="fade-up" data-aos-delay="150">
+            <div class="service-header">
+              <div class="service-category">
+                <span>Estética Avançada</span>
+              </div>
+              <h2>Tratamentos Faciais e Corporais Personalizados</h2>
+              <p class="lead">Cuidados exclusivos que combinam tecnologia de ponta com atendimento humanizado para resultados surpreendentes</p>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="row gy-4 align-items-center">
+
+          <div class="col-lg-5" data-aos="fade-right" data-aos-delay="200">
+            <div class="service-details">
+
+              <div class="detail-item">
+                <div class="icon-wrapper">
+                  <i class="bi bi-droplet"></i>
+                </div>
+                <div class="content">
+                  <h4>Tratamentos Faciais</h4>
+                  <p>Limpeza de pele profunda, peeling químico, microagulhamento e protocolos anti-idade que revitalizam sua pele com segurança e eficácia.</p>
+                </div>
+              </div>
+
+              <div class="detail-item">
+                <div class="icon-wrapper">
+                  <i class="bi bi-activity"></i>
+                </div>
+                <div class="content">
+                  <h4>Tratamentos Corporais</h4>
+                  <p>Massagem modeladora, drenagem linfática, radiofrequência e criolipólise para definição corporal e redução de medidas.</p>
+                </div>
+              </div>
+
+              <div class="detail-item">
+                <div class="icon-wrapper">
+                  <i class="bi bi-prescription2"></i>
+                </div>
+                <div class="content">
+                  <h4>Plano de Cuidados Personalizado</h4>
+                  <p>Avaliação individualizada e acompanhamento contínuo para garantir os melhores resultados, respeitando as necessidades de cada cliente.</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="col-lg-7" data-aos="fade-left" data-aos-delay="300">
+            <div class="service-visual">
+              <img src="./../../assets/img/health/beauty-treatment.webp" alt="Tratamentos Estéticos" class="img-fluid" onerror="this.src='https://placehold.co/600x400/e9ecef/495057?text=Tratamento+Estético'">
+              <div class="visual-overlay">
+                <div class="stats-card">
+                  <div class="stat">
+                    <span class="number">98%</span>
+                    <span class="label">Satisfação</span>
+                  </div>
+                  <div class="stat">
+                    <span class="number">15+</span>
+                    <span class="label">Anos de Experiência</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="row gy-4 mt-5">
+
+          <div class="col-12" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-overview">
+              <div class="row align-items-center">
+
+                <div class="col-lg-6">
+                  <h3>Por que escolher a Shiva Zen</h3>
+                  <p>Na Shiva Zen, acreditamos que a verdadeira beleza vem do equilíbrio entre bem-estar, saúde e autoestima. Nossa equipe é formada por profissionais altamente qualificados que combinam técnicas modernas com um atendimento acolhedor e personalizado.</p>
+
+                  <div class="features-grid">
+                    <div class="feature">
+                      <i class="bi bi-award"></i>
+                      <span>Profissionais Especializados</span>
+                    </div>
+                    <div class="feature">
+                      <i class="bi bi-clock-history"></i>
+                      <span>Agendamento Flexível</span>
+                    </div>
+                    <div class="feature">
+                      <i class="bi bi-shield-plus"></i>
+                      <span>Tecnologia de Ponta</span>
+                    </div>
+                    <div class="feature">
+                      <i class="bi bi-heart-pulse"></i>
+                      <span>Cuidado Humanizado</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-6">
+                  <div class="treatment-areas">
+                    <h4>Áreas de Atuação</h4>
+                    <div class="condition-tags">
+                      <span class="tag">Harmonização Facial</span>
+                      <span class="tag">Tratamento para Acne</span>
+                      <span class="tag">Rejuvenescimento</span>
+                      <span class="tag">Redução de Medidas</span>
+                      <span class="tag">Flacidez Corporal</span>
+                      <span class="tag">Celulite</span>
+                      <span class="tag">Depilação a Laser</span>
+                      <span class="tag">Massoterapia</span>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="row gy-4 mt-5">
+
+          <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="100">
+            <div class="action-card primary">
+              <div class="card-header">
+                <i class="bi bi-calendar-check"></i>
+                <h4>Agende sua Avaliação</h4>
+              </div>
+              <p>Faça uma avaliação completa com nossos especialistas e descubra os tratamentos ideais para você</p>
+              <div class="card-footer">
+                <a href="#" class="btn-action">Agendar Agora</a>
+                <span class="availability">Próximo horário: Amanhã</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="200">
+            <div class="action-card secondary">
+              <div class="card-header">
+                <i class="bi bi-telephone"></i>
+                <h4>Atendimento Imediato</h4>
+              </div>
+              <p>Entre em contato conosco para dúvidas ou agendamentos rápidos</p>
+              <div class="card-footer">
+                <a href="tel:+5517999999999" class="btn-action">Ligar Agora</a>
+                <span class="availability">(17) 99999-9999</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="300">
+            <div class="action-card tertiary">
+              <div class="card-header">
+                <i class="bi bi-file-text"></i>
+                <h4>Segunda Opinião</h4>
+              </div>
+              <p>Receba uma avaliação especializada sobre seus tratamentos atuais</p>
+              <div class="card-footer">
+                <a href="#" class="btn-action">Solicitar Análise</a>
+                <span class="availability">Resposta em até 48h</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Service Details Section -->
+
+  </main>
+
+  <div id="footer-placeholder"></div>
+
+  <script src="../../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../../assets/vendor/php-email-form/validate.js"></script>
+  <script src="../../assets/vendor/aos/aos.js"></script>
+  <script src="../../assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="../../assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="../../assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="../../assets/js/main.js"></script>
+</body>
+</html>
